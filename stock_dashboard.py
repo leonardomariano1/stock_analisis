@@ -1,4 +1,3 @@
-import os
 import dash
 from dash import html, dcc, Output, Input
 import requests
@@ -164,8 +163,5 @@ app.layout = html.Div([
 ], id='main-container', style={'background-color': '#F4F4F4', 'color': 'black'})
 
 # Run the Dash app
-
 if __name__ == '__main__':
-   port = int(os.environ.get('PORT', 8050))
-   app.run_server(debug=True, port=port)
-
+    app.run_server(debug=True)
