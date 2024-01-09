@@ -1,1 +1,1 @@
-web: python stock_dashboard.py
+web: gunicorn stock_dashboard.py
